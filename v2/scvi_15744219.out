@@ -1,0 +1,7 @@
+rm: cannot remove 'likelihood_tables_*': No such file or directory
+rm: cannot remove 'unexpected_gapfill_likelihoods_*': No such file or directory
+Starting notebook execution sequence...
+Input Notebook:  step1_2_pcr_swap_and_gapfill_frequencies.ipynb
+Output Notebook: step1_2_pcr_swap_and_gapfill_frequencies_lib1.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:05<00:28,  5.76s/cell]slurmstepd: error: *** JOB 15744219 ON iscb009 CANCELLED AT 2025-07-14T14:47:34 ***

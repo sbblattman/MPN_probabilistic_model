@@ -1,0 +1,5 @@
+Starting notebook execution sequence...
+Input Notebook:  step1_2_pcr_swap_and_gapfill_frequencies.ipynb
+Output Notebook: step1_2_pcr_swap_and_gapfill_frequencies.ipynb
+Executing:   0%|          | 0/4 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  25%|██▌       | 1/4 [00:05<00:16,  5.41s/cell]Executing:  75%|███████▌  | 3/4 [55:15<20:27, 1227.54s/cell]Executing: 100%|██████████| 4/4 [55:17<00:00, 829.41s/cell] 

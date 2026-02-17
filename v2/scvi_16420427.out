@@ -1,0 +1,50 @@
+Starting notebook execution sequence...
+Input Notebook:  scvi_integration_genotyped.ipynb
+Output Notebook: scvi_integration_genotyped.ipynb
+Executing:   0%|          | 0/16 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▋         | 1/16 [00:11<02:45, 11.01s/cell]Executing:  12%|█▎        | 2/16 [24:56<3:24:55, 878.28s/cell]Executing:  31%|███▏      | 5/16 [27:05<51:22, 280.25s/cell]  Executing:  38%|███▊      | 6/16 [27:19<35:24, 212.48s/cell]Executing:  44%|████▍     | 7/16 [27:19<23:23, 155.90s/cell]Executing:  50%|█████     | 8/16 [28:48<18:21, 137.63s/cell]Executing:  56%|█████▋    | 9/16 [48:53<51:13, 439.05s/cell]Executing:  69%|██████▉   | 11/16 [55:42<27:51, 334.26s/cell]Executing:  75%|███████▌  | 12/16 [56:07<17:18, 259.60s/cell]Executing:  81%|████████▏ | 13/16 [1:11:34<21:32, 430.98s/cell]Executing:  88%|████████▊ | 14/16 [1:12:55<11:14, 337.06s/cell]Executing:  88%|████████▊ | 14/16 [1:12:59<10:25, 312.85s/cell]
+Traceback (most recent call last):
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/bin/papermill", line 8, in <module>
+    sys.exit(papermill())
+             ^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1363, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/cli.py", line 235, in papermill
+    execute_notebook(
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [14]":
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[14], line 2
+      1 adata.write_h5ad("/data1/lareauc/users/blattms/gapfill/wta_adata/20250622_MPN_16plex_scvi/Integrated_MPN_scvi_genotyped.h5ad")
+----> 2 model.save("/data1/lareauc/users/blattms/gapfill/wta_adata/20250622_MPN_16plex_scvi_genotyped/")
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/scvi/model/base/_base_model.py:688, in BaseModelClass.save(self, dir_path, prefix, overwrite, save_anndata, save_kwargs, legacy_mudata_format, datamodule, **anndata_write_kwargs)
+    686     os.makedirs(dir_path, exist_ok=overwrite)
+    687 else:
+--> 688     raise ValueError(
+    689         f"{dir_path} already exists. Please provide another directory for saving."
+    690     )
+    692 file_name_prefix = prefix or ""
+    693 save_kwargs = save_kwargs or {}
+
+ValueError: /data1/lareauc/users/blattms/gapfill/wta_adata/20250622_MPN_16plex_scvi_genotyped/ already exists. Please provide another directory for saving.
+

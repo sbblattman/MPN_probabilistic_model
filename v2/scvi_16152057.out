@@ -1,0 +1,12 @@
+Starting notebook execution sequence...
+Input Notebook:  step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Output Notebook: step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Executing:   0%|          | 0/5 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  20%|██        | 1/5 [00:05<00:23,  5.77s/cell]Executing:  80%|████████  | 4/5 [24:04<06:29, 389.87s/cell]Executing: 100%|██████████| 5/5 [24:05<00:00, 289.18s/cell]
+Input Notebook:  step5_get_cell_probabilities.ipynb
+Output Notebook: step5_get_cell_probabilities.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:01<00:05,  1.09s/cell]Executing:  33%|███▎      | 2/6 [00:04<00:10,  2.71s/cell]mkdir: cannot create directory ‘likelihood_tables_with_null_1’: File exists
+mkdir: cannot create directory ‘likelihood_tables_with_null_2’: File exists
+mkdir: cannot create directory ‘likelihood_tables_with_null_4plex’: File exists
+Executing:  50%|█████     | 3/6 [00:05<00:05,  1.72s/cell]Executing:  83%|████████▎ | 5/6 [09:29<02:40, 160.48s/cell]Executing: 100%|██████████| 6/6 [09:31<00:00, 95.26s/cell] 

@@ -1,0 +1,57 @@
+Starting notebook execution sequence...
+Input Notebook:  step5_get_cell_probabilities.ipynb
+Output Notebook: step5_get_cell_probabilities.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:00<00:04,  1.14cell/s]Executing:  33%|███▎      | 2/6 [00:03<00:08,  2.14s/cell]Executing:  83%|████████▎ | 5/6 [09:07<02:10, 130.45s/cell]Executing: 100%|██████████| 6/6 [09:09<00:00, 91.53s/cell] 
+Input Notebook:  ../scvi_integration_genotyped.ipynb
+Output Notebook: ../scvi_integration_genotyped.ipynb
+Executing:   0%|          | 0/16 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▋         | 1/16 [00:09<02:26,  9.79s/cell]Executing:   6%|▋         | 1/16 [00:11<02:45, 11.01s/cell]
+Traceback (most recent call last):
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/bin/papermill", line 8, in <module>
+    sys.exit(papermill())
+             ^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1363, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/cli.py", line 235, in papermill
+    execute_notebook(
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [1]":
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+Cell In[1], line 9
+      7 import pickle
+      8 # Load the color palette from the file
+----> 9 with open('../20250318_patient_4plex/cell_type_palette.pkl', 'rb') as f:
+     10     cell_type_palette = pickle.load(f)
+     12 color_palette = cell_type_palette.copy()
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/IPython/core/interactiveshell.py:327, in _modified_open(file, *args, **kwargs)
+    320 if file in {0, 1, 2}:
+    321     raise ValueError(
+    322         f"IPython won't let you open fd={file} by default "
+    323         "as it is likely to crash IPython. If you know what you are doing, "
+    324         "you can use builtins' open."
+    325     )
+--> 327 return io_open(file, *args, **kwargs)
+
+FileNotFoundError: [Errno 2] No such file or directory: '../20250318_patient_4plex/cell_type_palette.pkl'
+

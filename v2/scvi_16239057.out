@@ -1,0 +1,5 @@
+Starting notebook execution sequence...
+Input Notebook:  20250721_mrvi_non_heterozygous_JAK2.ipynb
+Output Notebook: 20250721_mrvi_non_heterozygous_JAK2.ipynb
+Executing:   0%|          | 0/14 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   7%|▋         | 1/14 [00:10<02:16, 10.50s/cell]Executing:  21%|██▏       | 3/14 [03:19<13:20, 72.73s/cell]Executing:  29%|██▊       | 4/14 [03:27<08:23, 50.40s/cell]Executing:  43%|████▎     | 6/14 [04:24<05:16, 39.52s/cell]Executing:  57%|█████▋    | 8/14 [18:56<20:25, 204.19s/cell]Executing:  64%|██████▍   | 9/14 [18:56<13:07, 157.50s/cell]Executing:  71%|███████▏  | 10/14 [21:12<10:08, 152.13s/cell]Executing:  79%|███████▊  | 11/14 [23:10<07:09, 143.20s/cell]Executing:  86%|████████▌ | 12/14 [23:37<03:43, 111.62s/cell]Executing: 100%|██████████| 14/14 [23:39<00:00, 101.42s/cell]

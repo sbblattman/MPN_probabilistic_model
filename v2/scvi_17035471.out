@@ -1,0 +1,104 @@
+Starting notebook execution sequence...
+Input Notebook:  scvi_integration_genotyped.ipynb
+Output Notebook: scvi_integration_genotyped.ipynb
+Executing:   0%|          | 0/17 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▌         | 1/17 [00:10<02:51, 10.72s/cell]Executing:  12%|█▏        | 2/17 [01:03<08:55, 35.67s/cell]Executing:  29%|██▉       | 5/17 [01:46<04:03, 20.32s/cell]Executing:  35%|███▌      | 6/17 [01:49<02:54, 15.89s/cell]Executing:  47%|████▋     | 8/17 [01:57<01:38, 10.97s/cell]Executing:  59%|█████▉    | 10/17 [01:58<00:49,  7.03s/cell]Executing:  59%|█████▉    | 10/17 [02:00<01:24, 12.01s/cell]
+Traceback (most recent call last):
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/bin/papermill", line 8, in <module>
+    sys.exit(papermill())
+             ^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1442, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1363, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 1226, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/core.py", line 794, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/click/decorators.py", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/cli.py", line 235, in papermill
+    execute_notebook(
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [10]":
+---------------------------------------------------------------------------
+InvalidParameterError                     Traceback (most recent call last)
+Cell In[10], line 4
+      1 ## first process without scvi integration
+      2 
+      3 # run PCA then generate UMAP plots
+----> 4 sc.tl.pca(adata)
+      5 sc.pp.neighbors(adata, n_pcs=30, n_neighbors=20)
+      6 sc.tl.umap(adata, min_dist=0.3, random_state=0)
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/scanpy/preprocessing/_pca/__init__.py:348, in pca(***failed resolving arguments***)
+    342             svd_solver = _handle_dask_ml_args(svd_solver, PCA)
+    343             pca_ = PCA(
+    344                 n_components=n_comps,
+    345                 svd_solver=svd_solver,
+    346                 random_state=random_state,
+    347             )
+--> 348         X_pca = pca_.fit_transform(X)
+    349 else:
+    350     if isinstance(X, DaskArray):
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/sklearn/utils/_set_output.py:316, in _wrap_method_output.<locals>.wrapped(self, X, *args, **kwargs)
+    314 @wraps(f)
+    315 def wrapped(self, X, *args, **kwargs):
+--> 316     data_to_wrap = f(self, X, *args, **kwargs)
+    317     if isinstance(data_to_wrap, tuple):
+    318         # only wrap the first output for cross decomposition
+    319         return_tuple = (
+    320             _wrap_data_with_container(method, data_to_wrap[0], X, self),
+    321             *data_to_wrap[1:],
+    322         )
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/sklearn/base.py:1356, in _fit_context.<locals>.decorator.<locals>.wrapper(estimator, *args, **kwargs)
+   1351 partial_fit_and_fitted = (
+   1352     fit_method.__name__ == "partial_fit" and _is_fitted(estimator)
+   1353 )
+   1355 if not global_skip_validation and not partial_fit_and_fitted:
+-> 1356     estimator._validate_params()
+   1358 with config_context(
+   1359     skip_parameter_validation=(
+   1360         prefer_skip_nested_validation or global_skip_validation
+   1361     )
+   1362 ):
+   1363     return fit_method(estimator, *args, **kwargs)
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/sklearn/base.py:469, in BaseEstimator._validate_params(self)
+    461 def _validate_params(self):
+    462     """Validate types and values of constructor parameters
+    463 
+    464     The expected type and values must be defined in the `_parameter_constraints`
+   (...)    467     accepted constraints.
+    468     """
+--> 469     validate_parameter_constraints(
+    470         self._parameter_constraints,
+    471         self.get_params(deep=False),
+    472         caller_name=self.__class__.__name__,
+    473     )
+
+File /data1/lareauc/users/blattms/miniconda3/envs/mrvi-env/lib/python3.12/site-packages/sklearn/utils/_param_validation.py:98, in validate_parameter_constraints(parameter_constraints, params, caller_name)
+     92 else:
+     93     constraints_str = (
+     94         f"{', '.join([str(c) for c in constraints[:-1]])} or"
+     95         f" {constraints[-1]}"
+     96     )
+---> 98 raise InvalidParameterError(
+     99     f"The {param_name!r} parameter of {caller_name} must be"
+    100     f" {constraints_str}. Got {param_val!r} instead."
+    101 )
+
+InvalidParameterError: The 'n_components' parameter of PCA must be an int in the range [0, inf), a float in the range (0.0, 1.0), a str among {'mle'} or None. Got -1 instead.
+

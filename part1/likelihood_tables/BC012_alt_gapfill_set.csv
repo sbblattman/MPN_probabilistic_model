@@ -1,0 +1,4 @@
+name,gapfill,gapfill_from_transcriptome,frequency_BC012,count_of_this_gapfill_BC012,likelihood_wt_given_observed_BC012
+ASXL1 c.2245_2246insGG,GGGGACCGT,GGGGAGT,0.3132304815334268,1340.0,0.0
+JAK2 c.1849G>T,AAC,CAC,0.9610435271781168,13667.0,0.0
+JAK2 c.3187_3189,TATGC,TACGC,0.9158146617359147,4210.0,0.0

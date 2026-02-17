@@ -1,0 +1,78 @@
+Starting notebook execution sequence...
+Input Notebook:  step1_save_pcr_swap_likelihoods.ipynb
+Output Notebook: step1_save_pcr_swap_likelihoods.ipynb
+Executing:   0%|          | 0/5 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  20%|██        | 1/5 [00:01<00:04,  1.00s/cell]Executing:  40%|████      | 2/5 [00:04<00:06,  2.24s/cell]Executing:  80%|████████  | 4/5 [09:12<02:52, 172.66s/cell]Executing: 100%|██████████| 5/5 [09:13<00:00, 110.70s/cell]
+Input Notebook:  step2_save_gapfill_frequencies_for_feature_set.ipynb
+Output Notebook: step2_save_gapfill_frequencies_for_feature_set.ipynb
+Executing:   0%|          | 0/7 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  14%|█▍        | 1/7 [00:00<00:05,  1.02cell/s]Executing:  29%|██▊       | 2/7 [00:04<00:10,  2.19s/cell]Executing:  71%|███████▏  | 5/7 [19:18<09:12, 276.20s/cell]Executing: 100%|██████████| 7/7 [19:19<00:00, 165.67s/cell]
+Input Notebook:  step3_define_feature_sets.ipynb
+Output Notebook: step3_define_feature_sets.ipynb
+Executing:   0%|          | 0/12 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   8%|▊         | 1/12 [00:01<00:12,  1.10s/cell]Executing:  17%|█▋        | 2/12 [00:04<00:24,  2.42s/cell]Executing:  33%|███▎      | 4/12 [00:04<00:07,  1.04cell/s]Executing:  58%|█████▊    | 7/12 [00:08<00:06,  1.21s/cell]Executing:  83%|████████▎ | 10/12 [00:08<00:01,  1.47cell/s]Executing: 100%|██████████| 12/12 [00:09<00:00,  1.24cell/s]
+Input Notebook:  step1_save_pcr_swap_likelihoods.ipynb
+Output Notebook: step1_save_pcr_swap_likelihoods.ipynb
+Executing:   0%|          | 0/5 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  20%|██        | 1/5 [00:00<00:03,  1.04cell/s]Executing:  40%|████      | 2/5 [00:04<00:06,  2.28s/cell]Executing:  80%|████████  | 4/5 [08:57<02:48, 168.03s/cell]Executing: 100%|██████████| 5/5 [08:58<00:00, 107.76s/cell]
+Input Notebook:  step2_save_gapfill_frequencies_for_feature_set.ipynb
+Output Notebook: step2_save_gapfill_frequencies_for_feature_set.ipynb
+Executing:   0%|          | 0/7 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  14%|█▍        | 1/7 [00:01<00:07,  1.23s/cell]Executing:  29%|██▊       | 2/7 [00:04<00:12,  2.48s/cell]Executing:  71%|███████▏  | 5/7 [16:09<07:41, 230.99s/cell]Executing: 100%|██████████| 7/7 [16:10<00:00, 138.66s/cell]
+Input Notebook:  step3_define_feature_sets.ipynb
+Output Notebook: step3_define_feature_sets.ipynb
+Executing:   0%|          | 0/12 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   8%|▊         | 1/12 [00:00<00:10,  1.05cell/s]Executing:  17%|█▋        | 2/12 [00:04<00:23,  2.38s/cell]Executing:  33%|███▎      | 4/12 [00:04<00:07,  1.06cell/s]Executing:  58%|█████▊    | 7/12 [00:08<00:05,  1.11s/cell]Executing:  92%|█████████▏| 11/12 [00:08<00:00,  1.84cell/s]Executing: 100%|██████████| 12/12 [00:09<00:00,  1.33cell/s]
+Input Notebook:  step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Output Notebook: step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:04<00:21,  4.23s/cell]Executing:  83%|████████▎ | 5/6 [15:58<03:23, 203.71s/cell]Executing: 100%|██████████| 6/6 [15:59<00:00, 159.96s/cell]
+Input Notebook:  step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Output Notebook: step4_save_gapfill_likelihoods_in_feature_set.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:04<00:20,  4.03s/cell]Executing:  83%|████████▎ | 5/6 [13:43<02:55, 175.01s/cell]Executing: 100%|██████████| 6/6 [13:44<00:00, 137.46s/cell]
+Input Notebook:  step5_get_cell_probabilities.ipynb
+Output Notebook: step5_get_cell_probabilities.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:00<00:04,  1.11cell/s]Executing:  33%|███▎      | 2/6 [00:03<00:08,  2.13s/cell]Executing:  83%|████████▎ | 5/6 [10:10<02:25, 145.41s/cell]Executing: 100%|██████████| 6/6 [10:11<00:00, 101.98s/cell]
+Input Notebook:  step5_get_cell_probabilities.ipynb
+Output Notebook: step5_get_cell_probabilities.ipynb
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:00<00:04,  1.02cell/s]Executing:  33%|███▎      | 2/6 [00:04<00:08,  2.24s/cell]Executing:  83%|████████▎ | 5/6 [00:30<00:06,  6.87s/cell]Executing:  83%|████████▎ | 5/6 [00:31<00:06,  6.23s/cell]
+Traceback (most recent call last):
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/bin/papermill", line 8, in <module>
+    sys.exit(papermill())
+             ^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/papermill/cli.py", line 235, in papermill
+    execute_notebook(
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/data1/lareauc/users/blattms/miniconda3/envs/gapfill_utilities/lib/python3.11/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [4]":
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Cell In[4], line 52
+     50 adata.obs['genotype'] = adata.obsm['genotypes'][['JAK2 c.1849G>T_mutated','JAK2 c.1849G>T_heterozygous','JAK2 c.1849G>T_wt']].idxmax(axis=1)
+     51 sc.pl.umap(adata, color='genotype', frameon=False, palette={'JAK2 c.1849G>T_mutated':'red','JAK2 c.1849G>T_wt':'blue','JAK2 c.1849G>T_heterozygous':'orange'}, title = BC)
+---> 52 adata.write(adata_path.str.replace('.h5ad','_genotyped.h5ad'))
+
+AttributeError: 'str' object has no attribute 'str'
+

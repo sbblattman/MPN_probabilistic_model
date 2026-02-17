@@ -1,0 +1,4 @@
+name,gapfill,gapfill_from_transcriptome,frequency_BC010,count_of_this_gapfill_BC010,likelihood_wt_given_observed_BC010
+CALR c.1154_1155insTTGTC,T,CCTT,0.0046236213553129,2273.0,6.991624115356626e-38
+JAK2 c.1849G>T,AAC,CAC,0.5332647733565382,13482.0,0.0
+TP53 c.321C>G,CCT,CGT,0.9521203830369356,4176.0,0.0

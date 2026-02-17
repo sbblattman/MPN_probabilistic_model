@@ -1,0 +1,4 @@
+name,gapfill,gapfill_from_transcriptome,frequency_BC003,count_of_this_gapfill_BC003,likelihood_wt_given_observed_BC003
+JAK2 c.1849G>T,AAC,CAC,0.7718268525311812,1052.0,0.0
+NFE2 c.190_194del,AGTAAGT,CAGTAAGT,0.0179445350734094,11.0,0.0
+TET2 c.4021dupG,GCCA,GCA,0.0771704180064308,24.0,8.519708474114484e-160

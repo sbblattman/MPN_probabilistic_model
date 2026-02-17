@@ -1,0 +1,4 @@
+name,gapfill,gapfill_from_transcriptome,frequency_BC008,count_of_this_gapfill_BC008,likelihood_wt_given_observed_BC008
+IDH1 c.395G>A,ATGA,ACGA,0.5019157088122606,131.0,0.0
+JAK2 c.1849G>T,AAC,CAC,0.6696132596685083,2424.0,0.0
+MPL c.1771T>G,TCGT,TAGT,0.3601895734597156,152.0,0.0

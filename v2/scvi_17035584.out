@@ -1,0 +1,5 @@
+Starting notebook execution sequence...
+Input Notebook:  scvi_integration_genotyped.ipynb
+Output Notebook: scvi_integration_genotyped.ipynb
+Executing:   0%|          | 0/17 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   6%|▌         | 1/17 [00:07<01:53,  7.07s/cell]Executing:  12%|█▏        | 2/17 [06:13<54:37, 218.48s/cell]Executing:  29%|██▉       | 5/17 [10:05<23:30, 117.52s/cell]Executing:  35%|███▌      | 6/17 [10:31<17:16, 94.26s/cell] Executing:  47%|████▋     | 8/17 [11:31<10:04, 67.20s/cell]Executing:  53%|█████▎    | 9/17 [14:04<11:35, 86.90s/cell]Executing:  59%|█████▉    | 10/17 [32:31<39:40, 340.09s/cell]Executing:  71%|███████   | 12/17 [39:12<23:30, 282.13s/cell]Executing:  76%|███████▋  | 13/17 [39:39<14:55, 223.92s/cell]Executing:  82%|████████▏ | 14/17 [53:14<18:28, 369.35s/cell]Executing:  88%|████████▊ | 15/17 [55:02<10:02, 301.49s/cell]Executing:  94%|█████████▍| 16/17 [55:17<03:43, 223.84s/cell]Executing: 100%|██████████| 17/17 [55:20<00:00, 195.31s/cell]
